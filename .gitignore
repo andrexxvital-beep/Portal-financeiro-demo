@@ -1,0 +1,6 @@
+erp.key
+*.pem
+senha.json
+*.log
+.venv/
+__pycache__/

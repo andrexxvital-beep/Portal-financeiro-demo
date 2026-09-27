@@ -1,0 +1,134 @@
+data;descricao;valor
+01/07/2026;Comida;-71,06
+02/07/2026;Banco;-15,99
+02/07/2026;Mercado;-399,42
+03/07/2026;Familia;-197,28
+04/07/2026;Vendas Pix;372,34
+05/07/2026;Vendas Pix;391,69
+08/07/2026;Vendas Pix;201,52
+09/07/2026;Banco;-35,78
+09/07/2026;Familia;-167,94
+09/07/2026;Vendas Pix;736,88
+13/07/2026;Comida;-71,60
+13/07/2026;Vendas Pix;350,91
+14/07/2026;Familia;-226,37
+15/07/2026;Aluguel;-1800,00
+15/07/2026;Familia;-237,52
+16/07/2026;Banco;-25,80
+16/07/2026;Familia;-203,40
+16/07/2026;Vendas Pix;206,89
+16/07/2026;Vendas Pix;607,63
+17/07/2026;Mercado;-380,01
+18/07/2026;Vendas Pix;705,44
+19/07/2026;Saude;-83,73
+19/07/2026;Vendas Pix;452,37
+20/07/2026;Saude;-103,50
+21/07/2026;Banco;-43,82
+21/07/2026;Vendas Pix;716,00
+24/07/2026;Contas da loja;-124,43
+25/07/2026;Vendas Pix;663,84
+26/07/2026;Contas da loja;-226,83
+27/07/2026;Mercado;-280,27
+27/07/2026;Vendas Pix;425,81
+28/07/2026;Comida;-109,36
+29/07/2026;Fornecedores;-1264,67
+02/08/2026;Contas da loja;-259,70
+03/08/2026;Vendas cartao;439,26
+04/08/2026;Comida;-174,59
+04/08/2026;Saude;-94,76
+05/08/2026;Comida;-72,17
+05/08/2026;Vendas Pix;572,64
+06/08/2026;Contas da loja;-199,97
+06/08/2026;Mercado;-438,36
+06/08/2026;Vendas Pix;774,97
+07/08/2026;Fornecedores;-1143,07
+08/08/2026;Banco;-15,15
+08/08/2026;Familia;-116,45
+09/08/2026;Vendas cartao;372,56
+09/08/2026;Vendas cartao;706,69
+10/08/2026;Familia;-183,37
+10/08/2026;Vendas Pix;504,62
+10/08/2026;Vendas Pix;601,09
+10/08/2026;Vendas cartao;214,84
+11/08/2026;Vendas cartao;253,80
+11/08/2026;Vendas cartao;418,13
+12/08/2026;Fornecedores;-1130,64
+12/08/2026;Vendas Pix;292,86
+14/08/2026;Vendas cartao;503,82
+15/08/2026;Aluguel;-1800,00
+15/08/2026;Mercado;-343,70
+15/08/2026;Vendas cartao;507,77
+16/08/2026;Contas da loja;-134,79
+16/08/2026;Vendas boleto;434,71
+16/08/2026;Vendas cartao;438,89
+17/08/2026;Banco;-28,34
+17/08/2026;Vendas Pix;374,41
+17/08/2026;Vendas boleto;557,65
+17/08/2026;Vendas cartao;499,07
+17/08/2026;Vendas cartao;582,63
+19/08/2026;Mercado;-384,99
+19/08/2026;Vendas Pix;333,76
+20/08/2026;Comida;-92,17
+21/08/2026;Vendas cartao;622,39
+22/08/2026;Vendas Pix;296,07
+22/08/2026;Vendas Pix;549,84
+23/08/2026;Contas da loja;-141,83
+23/08/2026;Familia;-185,85
+23/08/2026;Vendas Pix;632,28
+24/08/2026;Familia;-132,17
+25/08/2026;Saude;-104,19
+26/08/2026;Banco;-30,74
+26/08/2026;Contas da loja;-120,08
+26/08/2026;Fornecedores;-644,35
+26/08/2026;Vendas Pix;289,12
+27/08/2026;Banco;-17,84
+27/08/2026;Vendas Pix;669,45
+29/08/2026;Familia;-123,51
+01/09/2026;Mercado;-233,05
+02/09/2026;Vendas Pix;754,85
+03/09/2026;Familia;-197,53
+04/09/2026;Contas da loja;-228,55
+04/09/2026;Familia;-225,93
+04/09/2026;Fornecedores;-745,53
+04/09/2026;Vendas Pix;341,14
+05/09/2026;Vendas Pix;256,32
+06/09/2026;Familia;-241,63
+07/09/2026;Banco;-31,29
+07/09/2026;Vendas cartao;607,10
+08/09/2026;Fornecedores;-696,85
+08/09/2026;Saude;-77,64
+09/09/2026;Vendas Pix;353,67
+09/09/2026;Vendas Pix;552,87
+09/09/2026;Vendas cartao;470,08
+10/09/2026;Comida;-100,89
+10/09/2026;Vendas Pix;759,09
+12/09/2026;Vendas Pix;667,85
+12/09/2026;Vendas cartao;208,48
+12/09/2026;Vendas cartao;732,66
+13/09/2026;Banco;-22,18
+14/09/2026;Familia;-139,57
+14/09/2026;Vendas Pix;719,90
+14/09/2026;Vendas Pix;779,26
+15/09/2026;Aluguel;-1800,00
+15/09/2026;Contas da loja;-150,52
+16/09/2026;Vendas cartao;769,27
+17/09/2026;Vendas cartao;439,49
+17/09/2026;Vendas cartao;485,61
+18/09/2026;Mercado;-269,06
+18/09/2026;Vendas boleto;852,87
+18/09/2026;Vendas cartao;511,77
+19/09/2026;Vendas Pix;792,85
+19/09/2026;Vendas cartao;682,96
+20/09/2026;Vendas cartao;401,85
+21/09/2026;Contas da loja;-94,90
+21/09/2026;Vendas Pix;263,79
+22/09/2026;Banco;-21,59
+22/09/2026;Saude;-80,69
+22/09/2026;Vendas Pix;592,83
+23/09/2026;Comida;-160,88
+23/09/2026;Fornecedores;-1149,51
+24/09/2026;Banco;-43,04
+24/09/2026;Vendas cartao;767,04
+25/09/2026;Comida;-149,17
+26/09/2026;Mercado;-194,31
+26/09/2026;Vendas cartao;408,21

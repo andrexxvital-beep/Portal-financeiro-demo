@@ -1,0 +1,22 @@
+1,1.01.01,Vendas Pix,Receita
+1,1.01.02,Vendas cartao,Receita
+1,1.01.03,Vendas boleto,Receita
+1,2.01.01,Fornecedores,Custos
+1,2.02.01,Aluguel,Despesas administrativas
+1,2.02.02,Contas da loja,Despesas administrativas
+1,2.02.03,Banco,Despesas financeiras
+1,2.03.01,Mercado,Retiradas
+1,2.03.02,Familia,Retiradas
+1,2.03.03,Comida,Retiradas
+1,2.03.04,Saude,Retiradas
+2,1.01.01,Vendas Pix,Receita
+2,1.01.02,Vendas cartao,Receita
+2,1.01.03,Vendas boleto,Receita
+2,2.01.01,Fornecedores,Custos
+2,2.02.01,Aluguel,Despesas administrativas
+2,2.02.02,Contas da loja,Despesas administrativas
+2,2.02.03,Banco,Despesas financeiras
+2,2.03.01,Mercado,Retiradas
+2,2.03.02,Familia,Retiradas
+2,2.03.03,Comida,Retiradas
+2,2.03.04,Saude,Retiradas
