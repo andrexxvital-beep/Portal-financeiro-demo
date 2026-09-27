@@ -1,6 +1,14 @@
 """Etapa 3g: resumo do dono + limites ajustaveis."""
 import html
-from extras import brl, ler
+from extras import brl, cfg, ler
+from datetime import date, timedelta
+
+
+def aberto(mes):
+    """True se o mes 'MM/AAAA' ainda nao terminou."""
+    hoje = cfg("hoje", None) or date.today()
+    fim = (hoje + timedelta(days=1)).month != hoje.month
+    return mes == hoje.strftime("%m/%Y") and not fim
 
 
 def rs(c):
@@ -48,7 +56,13 @@ def analise(d):
          "sal_ult": meses[-1]["saldo"]}
     n, ent, emp, pes = r["n"], r["ent"], r["emp"], r["pes"]
     sai = emp + pes or 1
-    v0, v1 = meses[0]["entra"], meses[-1]["entra"]
+    fe, obs = meses, ""  # tendencia so com mes fechado
+    if aberto(meses[-1]["mes"]):
+        fe, obs = ((meses[:-1], " (meses fechados)")
+                   if len(meses) > 2 else
+                   (meses, " (mês ainda em aberto)"))
+    r["t0"], r["t1"] = fe[0]["mes"], fe[-1]["mes"]
+    v0, v1 = fe[0]["entra"], fe[-1]["entra"]
     r["tend"] = 100 * (v1 - v0) / (v0 or 1)
     r["precisa"] = sai / n
     r["cobre"] = (ent / n) / r["precisa"]
@@ -62,8 +76,8 @@ def analise(d):
                    f"{rs(r['sal'])})."))
     if r["tend"] < -LIMITES["queda_vendas"]:
         al.append(("av", "Receitas caíram "
-                   f"{abs(r['tend']):.0f}% de {r['m0']} "
-                   f"para {r['m1']}."))
+                   f"{abs(r['tend']):.0f}% de {r['t0']} "
+                   f"para {r['t1']}{obs}."))
     try:
         vendas = [(x, v) for x, _, v in ler() if v > 0]
     except (OSError, ValueError, KeyError):

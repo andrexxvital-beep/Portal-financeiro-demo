@@ -901,6 +901,9 @@ def status(r):
     per = de_ate(r["m0"], m)
     tp, txt = ("mau", "negativo") if s < 0 else (
         "bom", "positivo")
+    p = parcial(m)
+    selo = (f"{m1} até {p}: {txt}" if p
+            else f"{m1} fechou {txt}")
     av = [x for c, x in r["alertas"] if c == "av"]
     ch = ""
     if av:
@@ -911,8 +914,7 @@ def status(r):
     return (f"{A}div class=emp>{html.escape(empresa_nome())}"
             f"</div>{A}div class=top>{A}span class=sub>"
             f"Resumo financeiro &#183; {per}</span>"
-            + pill(f"{m1} fechou {txt}", tp)
-            + f"</div>{ch}")
+            + pill(selo, tp) + f"</div>{ch}")
 
 
 def rodape(p):
@@ -941,6 +943,8 @@ def kpis(r, meses):
         acum.append(x)
     luc = ent - r["emp"]
     m1 = nome_mes(r["m1"])
+    if parcial(r["m1"]):  # mes em aberto
+        m1 += "*"
     ant = res[-2] if len(res) > 1 else res[-1]
     p = 100 * (res[-1] - ant) / (abs(ant) or 1)
     se = "&#9650;" if p >= 0 else "&#9660;"
@@ -1040,7 +1044,7 @@ def balanco(r):
     cl = "ok" if s >= 0 else "neg"
     pe = "1 mês" if n == 1 else f"{n} meses"
     med = "" if n == 1 else (
-        f" Média de {curto(s / n)} por mês.")
+        f" Resultado médio: {curto(s / n)} por mês.")
     return (f"{A}div class=cd>{A}div class=top>{A}h3>"
             f"Balanço do período</h3>{A}span class=sub>"
             f"{pe} · R$</span></div>"
